@@ -7,12 +7,16 @@ import ComParametros from './components/ComParametros';
 import Pai from './components/Familia/Pai';
 import PaiDois from './components/Familia/PaiDois';
 import Filho from './components/Familia/Filho';
+import ListaAlunos from './components/repeticao/ListaAlunos';
 
 
 export default () => (
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
+            <Card titulo='#06 - Repetição' color='#857907'>
+                <ListaAlunos></ListaAlunos>
+            </Card>
             <Card titulo='#05 - Componente Pai 2' color='#E35'>
                 <PaiDois sobrenome="Uniesp">
                     <Filho nome="Roberto" />
