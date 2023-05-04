@@ -8,14 +8,24 @@ import Pai from './components/Familia/Pai';
 import PaiDois from './components/Familia/PaiDois';
 import Filho from './components/Familia/Filho';
 import ListaAlunos from './components/repeticao/ListaAlunos';
+import TabelaProdutos from './components/repeticao/TabelaProdutos';
+import ParOuImpar from './components/condicional/ParOuImpar';
+import Usuario from './components/condicional/Usuario';
 
 
 export default () => (
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
+            <Card titulo='#08 - Renderização condicional' color='#632f18'>
+                <ParOuImpar numero={21}/>
+                <Usuario usuario={{nome:"Renan"}}/>
+            </Card>
+            <Card titulo='#07 - Repetição Exercicio' color='#12274d'>
+                <TabelaProdutos/>
+            </Card>
             <Card titulo='#06 - Repetição' color='#857907'>
-                <ListaAlunos></ListaAlunos>
+                <ListaAlunos/>
             </Card>
             <Card titulo='#05 - Componente Pai 2' color='#E35'>
                 <PaiDois sobrenome="Uniesp">
