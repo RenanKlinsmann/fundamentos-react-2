@@ -11,12 +11,28 @@ import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import Usuario from './components/condicional/Usuario';
+import DiretaPai from './components/comunicacao/DiretaPai';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
+import Input from './components/formulario/Input';
+import Contador from './components/classeComponent/Contador';
 
 
 export default () => (
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
+            <Card titulo='#12 - Class Component' color='#ff6632'>
+                <Contador numero={45}/>
+            </Card>
+            <Card titulo='#11 - Formulario controlado' color='#e7c33e'>
+                <Input/>
+            </Card>
+            <Card titulo='#10 - Comunicação Indireta' color='#9b9edc'>
+                <IndiretaPai/>
+            </Card>
+            <Card titulo='#09 - Comunicação Direta' color='#73416c'>
+                <DiretaPai/>
+            </Card>
             <Card titulo='#08 - Renderização condicional' color='#632f18'>
                 <ParOuImpar numero={21}/>
                 <Usuario usuario={{nome:"Renan"}}/>
